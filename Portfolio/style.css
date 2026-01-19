@@ -9,6 +9,50 @@
 
 }
 
+.botoes{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction:row;
+}
+.dark-mode{
+margin: 5px;
+padding: 5px;
+}
+#btn_dark{
+padding: 20px;
+border: 1px solid  #F2F2F2;
+border-radius: 10px;
+background-color: #0B192C;
+color: #F2F2F2;
+font-size: 1.6em;
+}
+.light-mode{
+margin: 5px;
+padding: 5px;
+}
+#btn_light{
+padding: 20px;
+border: 1px solid #F2F2F2;
+border-radius: 10px;
+background-color: #0B192C;
+color: #F2F2F2;
+font-size: 1.6em;
+}
+.btn_translate{
+margin: 5px;
+padding: 5px;
+}
+#translate{
+padding: 20px;
+border: 1px solid #F2F2F2;
+border-radius: 10px;
+background-color: #0B192C;
+color: #F2F2F2;
+font-size: 1.6em;
+
+}
+
 
 
 .cab{
