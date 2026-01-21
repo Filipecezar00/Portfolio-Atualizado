@@ -8,7 +8,6 @@
     
 
 }
-
 .botoes{
     display: flex;
     justify-content: left;
@@ -53,17 +52,6 @@ font-size: 1.6em;
 
 }
 
-#sobremim{
-
-}
-#habilidades{
-
-}
-#projetos{
-    
-}
-
-
 .cab{
     display: flex;
     flex-direction: row;
@@ -81,11 +69,6 @@ font-size: 1.6em;
     
 }
 
-
-main{
-   
-}
-
 .meio{
  background-color:#0B192C;
  display: flex;
@@ -96,25 +79,19 @@ main{
   
 }
 
-#foto{
-    /* margin-right: 20%; */
-
-}
 
 #texto{
    margin-left: 15%; 
-   
-
 }
 
 #ola{
     font-size: 5pc;
     color: #F2F2F2;
 }
-#titulo{
+/* #titulo{
     font-size: 3pc;
   color: #F2F2F2;
-}
+} */
 
 #apr{
     font-size: 2pc;
@@ -210,12 +187,12 @@ a:hover{
     padding: 5px;
     margin-right: 10%;
 }
-#titulo{
+/* #titulo{
     font-size: 1pc;
     padding: 10px;
      text-align: left;
      margin-right: 10%;
-}
+} */
 #desc{
     font-size: 1pc;
     margin-right: 10%;
@@ -282,13 +259,13 @@ a:hover{
     margin-right: 10%;
     color: #F2F2F2;
 }
-#titulo{
+/* #titulo{
     font-size: 1pc;
     padding: 10px;
     text-align: left;
     margin-right: 10%;
     color: #F2F2F2;
-}
+} */
 #desc{
     font-size: 1pc;
     margin-right: 12%;
@@ -303,7 +280,6 @@ a:hover{
 
 
  .meio{
-    
     display:flex;
     flex-direction:row-reverse;
     flex-wrap: wrap;
