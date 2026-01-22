@@ -113,15 +113,15 @@ cursor: pointer ;
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
-    align-content:flex-end;
-    align-items:flex-end;
-
+    align-content:center;
+    align-items:center;
+    margin-left: 140px;
 }
 
 #lg{
     width: 50px;
     height: 50px;
-     margin: 10px;
+    margin: 10px;
 }
 
 #img{
@@ -175,7 +175,6 @@ a{
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
-
 }
 
 #lg{
@@ -229,11 +228,32 @@ a{
    flex-direction:row;
    text-align: center;
    color: #0B192C;
+   width: 450px;
 }
+
+.botoes{
+margin-left: 8px;
+}
+
+#btn_light{
+font-size: 1.0em;
+
+}
+#btn_dark{
+font-size: 1.0em;
+
+}
+#translate{
+font-size: 0.9em;
+
+}
+
 
 .aba{  
    padding:0px;
    text-align: center;
+   font-size: 1.2em;
+
 }
 
 #img{
@@ -246,6 +266,7 @@ a{
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
+    margin-left: 25px;
 
 }
 
@@ -289,7 +310,7 @@ a{
     display:flex;
     flex-direction:row-reverse;
     flex-wrap: wrap;
-    
+    width: 496px;
  }
 }
 
