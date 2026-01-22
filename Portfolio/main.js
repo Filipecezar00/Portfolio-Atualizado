@@ -24,7 +24,7 @@ const translations = {
         btn_light:"Light",  
         button:"Translate to PT", 
         title:"Hi, I am Filipe, a Software Development Intern", 
-        about:"Systems Information Student With a strong focus on Software development and web applications. I have experience with MongoDB, Node.js, and SQL.... Currently, I work as a IT junior Apprentice at Monte Rodovias, My english is B2 Level, my goal is use it to grow my carrer in Development."
+        about:"Information Systems student, focused on software development and with a strong interest in creating software and web applications. I have knowledge of MongoDB, Node.js, and SQL, acquired through personal and academic projects. I am familiar with REST APIs, code versioning, and good programming practices. Currently, I work as a Young IT Apprentice at Monte Rodovias, where I develop practical skills in support and infrastructure. With B2 level English, I constantly seek to update my knowledge through international documentation and global communities, aiming to advance in the Development area."
     }
 }; 
 
