@@ -5,7 +5,6 @@
 //     index = (index+1) % professions.length 
 //     textElement.textContent = professions[index]
 // },3000)
-
 const translations = {
     pt:{
         sobremim:"Sobre mim", 
@@ -29,6 +28,19 @@ const translations = {
     }
 }; 
 
+
+// const texto = document.getElementById("texto")
+// const navbar = document.getElementById("cab")
+// const abas = document.getElementById("aba")
+// const botoes = document.getElementById("botoes") 
+// const centro = document.getElementById("meio") 
+
+const body = document.body 
+const abas = document.querySelectorAll("a")
+
+
+
+
 const btn_dark = document.getElementById("btn_dark"); 
 const btn_light = document.getElementById("btn_light") 
 
@@ -49,7 +61,7 @@ langButton.addEventListener("click",()=>{
 
     btn_dark.innerText = translations[currentLang].btn_dark
     btn_light.innerText = translations[currentLang].btn_light
-    
+
     sobremim.innerText = translations[currentLang].sobremim 
     habilidades.innerText = translations[currentLang].habilidades 
     projetos.innerText = translations[currentLang].projetos 
@@ -59,4 +71,27 @@ langButton.addEventListener("click",()=>{
     langButton.innerText = translations[currentLang].button 
 
     localStorage.setItem("preferredLang",currentLang) 
+})
+
+btn_dark.addEventListener("click",()=>{
+abas.forEach(aba=>{
+aba.style.color = "#F2F2F2"
+})
+
+body.classList.add("dark-page"); 
+body.classList.remove("light-page"); 
+localStorage.setItem("theme","dark"); 
+
+})
+
+
+btn_light.addEventListener("click",()=>{
+abas.forEach(aba=>{
+    aba.style.color = "#0B192C"
+})
+
+
+body.classList.add("light-page"); 
+body.classList.remove("dark-page"); 
+localStorage.setItem("theme","light"); 
 })
