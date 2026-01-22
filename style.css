@@ -215,7 +215,6 @@ a{
     display:flex;
     flex-direction:row-reverse;
     flex-wrap: wrap;
-    
  }
 
 }
@@ -230,10 +229,11 @@ a{
    text-align: center;
    color: #0B192C;
    width: 450px;
+  margin-left: 250px;
 }
 
 .botoes{
-margin-left: 8px;
+margin-left: 25px;
 }
 
 #btn_light{
@@ -267,7 +267,7 @@ font-size: 0.9em;
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
-    margin-left: 25px;
+    margin-left: 80px;
 
 }
 
@@ -298,6 +298,7 @@ font-size: 0.9em;
     font-size: 1pc;
     margin-right: 12%;
     color: #F2F2F2;
+    margin-left: 13%;
 }
 
 #apr{
@@ -311,7 +312,7 @@ font-size: 0.9em;
     display:flex;
     flex-direction:row-reverse;
     flex-wrap: wrap;
-    width: 496px;
+    width: 62,5pc;
  }
 }
 
