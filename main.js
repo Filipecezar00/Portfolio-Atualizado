@@ -14,7 +14,10 @@ const translations = {
         btn_light:"Claro", 
         button:"Traduzir para EN", 
         title:"Olá, sou Filipe, Estagiário em Desenvolvimento" ,
-        about:"Estudante de Sistemas da informação, com foco em desenvolvimento de software e forte interesse em criação de softwares e aplicações web. Possuo conhecimentos em MongoDB, Node js e SQL,adquiridos por meio de projetos pessoais e acadêmicos.Tenho familiaridade com APIs REST, versionamento de código e boas práticas de programação Atualmente, atuo como Jovem Aprendiz de TI na Monte Rodovias , onde desenvolvo habilidades práticas em suporte e infraestrutura. Com Inglês nível B2, busco constantemente me atualizar através de documentações internacionais e comunidades globais, com o objetivo de evoluir na área de Desenvolvimento"
+        about:"Estudante de Sistemas da informação, com foco em desenvolvimento de software e forte interesse em criação de softwares e aplicações web. Possuo conhecimentos em MongoDB, Node js e SQL,adquiridos por meio de projetos pessoais e acadêmicos.Tenho familiaridade com APIs REST, versionamento de código e boas práticas de programação Atualmente, atuo como Jovem Aprendiz de TI na Monte Rodovias , onde desenvolvo habilidades práticas em suporte e infraestrutura. Com Inglês nível B2, busco constantemente me atualizar através de documentações internacionais e comunidades globais, com o objetivo de evoluir na área de Desenvolvimento", 
+        ferramentas:"Linguagens utilizadas: HTML5 - CSS3", 
+        linkProjetos:"Clique aqui para acessar", 
+         
     },
     en:{
         sobremim:"About me", 
@@ -24,7 +27,9 @@ const translations = {
         btn_light:"Light",  
         button:"Translate to PT", 
         title:"Hi, I am Filipe, a Software Development Intern", 
-        about:"Information Systems student, focused on software development and with a strong interest in creating software and web applications. I have knowledge of MongoDB, Node.js, and SQL, acquired through personal and academic projects. I am familiar with REST APIs, code versioning, and good programming practices. Currently, I work as a Young IT Apprentice at Monte Rodovias, where I develop practical skills in support and infrastructure. With B2 level English, I constantly seek to update my knowledge through international documentation and global communities, aiming to advance in the Development area."
+        about:"Information Systems student, focused on software development and with a strong interest in creating software and web applications. I have knowledge of MongoDB, Node.js, and SQL, acquired through personal and academic projects. I am familiar with REST APIs, code versioning, and good programming practices. Currently, I work as a Young IT Apprentice at Monte Rodovias, where I develop practical skills in support and infrastructure. With B2 level English, I constantly seek to update my knowledge through international documentation and global communities, aiming to advance in the Development area.", 
+        ferramentas:"Used Languages: HTML5 - CSS3", 
+        linkProjetos:"Clique aqui para Acessar" 
     }
 }; 
 
@@ -36,7 +41,7 @@ const translations = {
 // const centro = document.getElementById("meio") 
 
 const body = document.body 
-const abas = document.querySelectorAll("a")
+const abas = document.querySelectorAll(".aba")
 
 
 
@@ -48,7 +53,9 @@ const btn_light = document.getElementById("btn_light")
 const sobremim = document.getElementById("sobremim");
 const habilidades = document.getElementById("habilidades");
 const projetos = document.getElementById("projetos");
-
+const smallProject = document.querySelectorAll(".smallProject")
+const ferramentas = document.querySelectorAll(".ferramentas") 
+const linkProjetos = document.querySelectorAll(".linkProjetos" )
 
 const langButton = document.getElementById("translate");
 const titleElement = document.getElementById("ola");
@@ -70,13 +77,20 @@ langButton.addEventListener("click",()=>{
     aboutElement.innerText = translations[currentLang].about 
     langButton.innerText = translations[currentLang].button 
 
+    smallProject.innerText = translations[currentLang].smallProject
+    ferramentas.innerText = translations[currentLang].ferramentas
+    aboutElement.innerText = translations[currentLang].aboutElement 
+
     localStorage.setItem("preferredLang",currentLang) 
 })
 
 btn_dark.addEventListener("click",()=>{
+    
 abas.forEach(aba=>{
 aba.style.color = "#F2F2F2"
 })
+
+
 
 body.classList.add("dark-page"); 
 body.classList.remove("light-page"); 

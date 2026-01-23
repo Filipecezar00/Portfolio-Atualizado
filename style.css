@@ -8,6 +8,40 @@
 
 }
 
+
+#projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagem2{
+width: 726px;
+height: 310px;
+}
+#projeto2{
+margin: 10pc;
+}
+
+#smallProject1{
+    color: #F2F2F2;
+
+}
+#smallProject2{
+    color: #F2F2F2;
+}
+#ferramentas1{
+    color: #F2F2F2;
+}
+#ferramentas2{
+    color: #F2F2F2;
+}
+#linkProjetos1{
+    color: #F2F2F2;
+}
+#linkProjetos2{
+    color: #F2F2F2;
+}
 .dark-page{
     background-color: #0B192C;
     color: #F2F2F2;
