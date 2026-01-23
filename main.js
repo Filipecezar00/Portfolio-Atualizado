@@ -15,9 +15,10 @@ const translations = {
         button:"Traduzir para EN", 
         title:"Olá, sou Filipe, Estagiário em Desenvolvimento" ,
         about:"Estudante de Sistemas da informação, com foco em desenvolvimento de software e forte interesse em criação de softwares e aplicações web. Possuo conhecimentos em MongoDB, Node js e SQL,adquiridos por meio de projetos pessoais e acadêmicos.Tenho familiaridade com APIs REST, versionamento de código e boas práticas de programação Atualmente, atuo como Jovem Aprendiz de TI na Monte Rodovias , onde desenvolvo habilidades práticas em suporte e infraestrutura. Com Inglês nível B2, busco constantemente me atualizar através de documentações internacionais e comunidades globais, com o objetivo de evoluir na área de Desenvolvimento", 
-        ferramentas:"Linguagens utilizadas: HTML5 - CSS3", 
-        linkProjetos:"Clique aqui para acessar", 
-         
+        smallProject:"Projeto de interface web do youtube",
+        ferramenta:"Linguagens utilizadas: HTML5 - CSS3", 
+        linkProjeto:"Clique aqui para acessar"
+
     },
     en:{
         sobremim:"About me", 
@@ -28,8 +29,9 @@ const translations = {
         button:"Translate to PT", 
         title:"Hi, I am Filipe, a Software Development Intern", 
         about:"Information Systems student, focused on software development and with a strong interest in creating software and web applications. I have knowledge of MongoDB, Node.js, and SQL, acquired through personal and academic projects. I am familiar with REST APIs, code versioning, and good programming practices. Currently, I work as a Young IT Apprentice at Monte Rodovias, where I develop practical skills in support and infrastructure. With B2 level English, I constantly seek to update my knowledge through international documentation and global communities, aiming to advance in the Development area.", 
-        ferramentas:"Used Languages: HTML5 - CSS3", 
-        linkProjetos:"Clique aqui para Acessar" 
+        smallProject:"Project web Youtube's interface", 
+        ferramenta:"Used Languages: HTML5 - CSS3", 
+        linkProjeto:"Click here to see more" 
     }
 }; 
 
@@ -43,9 +45,6 @@ const translations = {
 const body = document.body 
 const abas = document.querySelectorAll(".aba")
 
-
-
-
 const btn_dark = document.getElementById("btn_dark"); 
 const btn_light = document.getElementById("btn_light") 
 
@@ -53,15 +52,21 @@ const btn_light = document.getElementById("btn_light")
 const sobremim = document.getElementById("sobremim");
 const habilidades = document.getElementById("habilidades");
 const projetos = document.getElementById("projetos");
-const smallProject = document.querySelectorAll(".smallProject")
-const ferramentas = document.querySelectorAll(".ferramentas") 
-const linkProjetos = document.querySelectorAll(".linkProjetos" )
+
+const smallProject1 = document.getElementById("smallProject1")
+const ferramentas1 = document.getElementById("ferramentas1") 
+const linkProjetos1 = document.getElementById("linkProjetos1" )
 
 const langButton = document.getElementById("translate");
 const titleElement = document.getElementById("ola");
 const aboutElement = document.getElementById("apr");
 
 let currentLang = "pt"; 
+
+
+console.log("Projeto 1: ", smallProject1)
+console.log("Ferramentas: ", ferramentas1)
+console.log("Link: ", linkProjetos1) 
 
 langButton.addEventListener("click",()=>{
     currentLang = currentLang === "pt" ? "en" : "pt"; 
@@ -77,12 +82,14 @@ langButton.addEventListener("click",()=>{
     aboutElement.innerText = translations[currentLang].about 
     langButton.innerText = translations[currentLang].button 
 
-    smallProject.innerText = translations[currentLang].smallProject
-    ferramentas.innerText = translations[currentLang].ferramentas
-    aboutElement.innerText = translations[currentLang].aboutElement 
+    smallProject1.innerText = translations[currentLang].smallProject
+    ferramentas1.innerText= translations[currentLang].ferramenta
+    linkProjetos1.innerText = translations[currentLang].linkProjeto 
 
     localStorage.setItem("preferredLang",currentLang) 
 })
+
+
 
 btn_dark.addEventListener("click",()=>{
     
