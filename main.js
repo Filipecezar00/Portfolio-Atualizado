@@ -5,6 +5,21 @@
 //     index = (index+1) % professions.length 
 //     textElement.textContent = professions[index]
 // },3000)
+
+window.addEventListener("DOMContentLoaded",()=>{
+
+    const savedLang = localStorage.getItem("preferredLang"); 
+    const savedTheme = localStorage.getItem("theme"); 
+
+    if(savedLang==="en"){
+        langButton.click();  
+    }
+    if(savedTheme==="dark"){
+        btn_dark.click(); 
+    }
+
+})
+
 const translations = {
     pt:{
         sobremim:"Sobre mim", 
