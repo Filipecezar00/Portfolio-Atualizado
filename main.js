@@ -35,7 +35,10 @@ const translations = {
         linkProjeto:"Clique aqui para acessar", 
         smallProject2:"Projeto página de Um Site web", 
         ferramenta2:"Linguagens Utilizadas: HTML5 - CSS3", 
-        linkProjeto2:"Clique aqui para acessar"
+        linkProjeto2:"Clique aqui para acessar", 
+        frontend:"Habilidades do Front-end:", 
+        backend:"Habilidades do Back-end:", 
+        outrostext:"Habilidades Uteis:"
     },
     en:{
         sobremim:"About me", 
@@ -51,7 +54,10 @@ const translations = {
         linkProjeto:"Click here to see more", 
         smallProject2:"Project WebSite Page", 
         ferramenta2:"Used Languages: HTML5-CSS3", 
-        linkProjeto2:"Click here to see more" 
+        linkProjeto2:"Click here to see more", 
+        frontend:"Front-end Skills: ", 
+        backend:"Back-end Skills: ", 
+        outrostext:"Helpful Skills: "
     }
 }; 
 
@@ -82,6 +88,9 @@ const smallProject2 = document.getElementById("smallProject2")
 const ferramentas2 = document.getElementById("ferramentas2")
 const linkProjetos2 = document.getElementById("linkProjetos2")
 
+const frontend = document.getElementById("frontendtext")
+const backend = document.getElementById("backendtext")
+const outrostext = document.getElementById("outrostext")
 
 const langButton = document.getElementById("translate");
 const titleElement = document.getElementById("ola");
@@ -116,6 +125,11 @@ langButton.addEventListener("click",()=>{
     if(smallProject2)smallProject2.innerText = translations[currentLang].smallProject2
     if(ferramentas2)ferramentas2.innerText = translations[currentLang].ferramenta2 
     if(linkProjetos2)linkProjetos2.innerText = translations[currentLang].linkProjeto2
+
+    if(frontend)frontend.innerText = translations[currentLang].frontend
+    if(backend)backend.innerText = translations[currentLang].backend 
+    if(outrostext)outrostext.innerText = translations[currentLang].outrostext
+
 
     localStorage.setItem("preferredLang",currentLang) 
 })
