@@ -187,17 +187,18 @@ a{
 @media (max-width: 768px) {
 /*Tela de Celular*/
 .cab{
-    
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-   text-align: center;
+   display: flex; 
+   flex-wrap:wrap;
+   flex-direction:row;
+   text-align: left;
+   align-items: left;  
+   justify-content: center;
+     font-size: small;
 }
 
 .aba{
+
    padding:0px;
-   text-align: center;
- 
 }
 
 #img{
@@ -245,49 +246,51 @@ a{
 
 
  .meio{
-    width: 29pc;
+    width:20%;
     display:flex;
-    flex-direction:row-reverse;
+    flex-direction:column;
     flex-wrap: wrap;
  }
 
 #imagem1{
-width: 350px;
-height: 125px;
+width: 300px;
+height: 115px;
+margin-right: 30px;
 }
 #imagem2{
-width: 350px;
-height: 125px;
+width: 300px;
+height: 115px;
+margin-right: 30px;
 }
 
 #smallProject1{
     color: #F2F2F2;
-    font-size: 1.2pc;
+    font-size: 1.0pc;
 
 }
 #smallProject2{
     color: #F2F2F2;
-    font-size: 1.2pc;
+    font-size: 1.0pc;
 
 }
 #ferramentas1{
     color: #F2F2F2;
-    font-size: 1.2pc;
+    font-size: 1.0pc;
 
 }
 #ferramentas2{
     color: #F2F2F2;
-    font-size: 1.2pc;
+    font-size: 1.0pc;
 
 }
 #linkProjetos1{
     color: #F2F2F2;
-    font-size: 1.2pc;
+    font-size: 1.0pc;
 
 }
 #linkProjetos2{
     color: #F2F2F2;
-    font-size: 1.2pc;
+    font-size: 1.0pc;
 
 }
 
@@ -303,8 +306,8 @@ height: 125px;
    flex-direction:row;
    text-align: center;
    color: #0B192C;
-   width: 450px;
-  margin-left: 250px;
+   /* width: 450px;
+  margin-left: 250px; */
 }
 
 .botoes{
@@ -387,7 +390,8 @@ font-size: 0.9em;
     display:flex;
     flex-direction:row-reverse;
     flex-wrap: wrap;
-    width: 62,5pc;
+    width: 100%;
+
  }
 }
 
