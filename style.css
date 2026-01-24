@@ -187,15 +187,15 @@ a{
 @media (max-width: 768px) {
 /*Tela de Celular*/
 .cab{
+    
     display: flex;
-    flex-wrap:nowrap;
-    flex-direction:row;
+    flex-wrap:wrap;
+    flex-direction:column;
    text-align: center;
 }
 
 .aba{
-     
-    padding:0px;
+   padding:0px;
    text-align: center;
  
 }
@@ -245,11 +245,52 @@ a{
 
 
  .meio{
-    
+    width: 29pc;
     display:flex;
     flex-direction:row-reverse;
     flex-wrap: wrap;
  }
+
+#imagem1{
+width: 350px;
+height: 125px;
+}
+#imagem2{
+width: 350px;
+height: 125px;
+}
+
+#smallProject1{
+    color: #F2F2F2;
+    font-size: 1.2pc;
+
+}
+#smallProject2{
+    color: #F2F2F2;
+    font-size: 1.2pc;
+
+}
+#ferramentas1{
+    color: #F2F2F2;
+    font-size: 1.2pc;
+
+}
+#ferramentas2{
+    color: #F2F2F2;
+    font-size: 1.2pc;
+
+}
+#linkProjetos1{
+    color: #F2F2F2;
+    font-size: 1.2pc;
+
+}
+#linkProjetos2{
+    color: #F2F2F2;
+    font-size: 1.2pc;
+
+}
+
 
 }
 
