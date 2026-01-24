@@ -193,12 +193,22 @@ a{
    text-align: left;
    align-items: left;  
    justify-content: center;
-     font-size: small;
+   font-size: small;
+}
+
+
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .aba{
-
    padding:0px;
+   flex-wrap: wrap;
 }
 
 #img{
@@ -246,7 +256,7 @@ a{
 
 
  .meio{
-    width:20%;
+    width:100pc;
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
