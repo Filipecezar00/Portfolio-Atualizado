@@ -68,6 +68,7 @@ const abas = document.querySelectorAll(".aba")
 const btn_dark = document.getElementById("btn_dark"); 
 const btn_light = document.getElementById("btn_light") 
 
+const img = document.getElementById("img")
 
 const sobremim = document.getElementById("sobremim");
 const habilidades = document.getElementById("habilidades");
@@ -130,6 +131,16 @@ if(titleElement) titleElement.style.color = "#F2F2F2"
 if(desc)desc.style.color = "#f2f2f2" 
 if(aboutElement)aboutElement.style.color = "#f2f2f2"
 
+if(smallProject1)smallProject1.style.color = "#f2f2f2"
+if(ferramentas1)ferramentas1.style.color = "#f2f2f2"
+if(linkProjetos1)linkProjetos1.style.color = "#f2f2f2"
+
+
+if(smallProject2)smallProject2.style.color = "#f2f2f2"
+if(ferramentas2)ferramentas2.style.color = "#f2f2f2"
+if(linkProjetos2)linkProjetos2.style.color = "#f2f2f2"
+
+
 
 body.classList.add("dark-page"); 
 body.classList.remove("light-page"); 
@@ -146,7 +157,13 @@ if(titleElement)titleElement.style.color = "#0B192C"
 if(desc)desc.style.color = "#0B192C"
 if(aboutElement)aboutElement.style.color = "#0B192C"
 
+if(smallProject1)smallProject1.style.color = "#0B192C"
+if(ferramentas1)ferramentas1.style.color = "#0B192C"
+if(linkProjetos1)linkProjetos1.style.color = "#0B192C"
 
+if(smallProject2)smallProject2.style.color = "#0B192C"
+if(ferramentas2)ferramentas2.style.color = "#0B192C"
+if(linkProjetos2)linkProjetos2.style.color = "#0B192C"
 
 body.classList.add("light-page"); 
 body.classList.remove("dark-page"); 
