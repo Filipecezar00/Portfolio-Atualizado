@@ -84,6 +84,7 @@ const linkProjetos2 = document.getElementById("linkProjetos2")
 
 const langButton = document.getElementById("translate");
 const titleElement = document.getElementById("ola");
+const desc = document.getElementById("desc")
 const aboutElement = document.getElementById("apr");
 
 let currentLang = "pt"; 
@@ -125,7 +126,9 @@ btn_dark.addEventListener("click",()=>{
 abas.forEach(aba=>{
 aba.style.color = "#F2F2F2"
 })
-
+if(titleElement) titleElement.style.color = "#F2F2F2"
+if(desc)desc.style.color = "#f2f2f2" 
+if(aboutElement)aboutElement.style.color = "#f2f2f2"
 
 
 body.classList.add("dark-page"); 
@@ -139,6 +142,10 @@ btn_light.addEventListener("click",()=>{
 abas.forEach(aba=>{
     aba.style.color = "#0B192C"
 })
+if(titleElement)titleElement.style.color = "#0B192C"
+if(desc)desc.style.color = "#0B192C"
+if(aboutElement)aboutElement.style.color = "#0B192C"
+
 
 
 body.classList.add("light-page"); 
